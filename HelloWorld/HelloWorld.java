@@ -1,5 +1,3 @@
 public class HelloWorld {
-    public static String helloWorld() {
-        return "Hello World !";
-    }
+    public static String helloWorld() { return "Hello World !"; }
 }
