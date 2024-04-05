@@ -1,5 +1,6 @@
 public class Palindrome {
     public static boolean isPalindrome(String s) {
+        s = s.toLowerCase();
         if (s == null) {
             return false;
         }
