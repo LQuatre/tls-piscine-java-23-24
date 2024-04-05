@@ -116,5 +116,6 @@ public class CleanExtract {
         // result = spaceRemover(result.toString());
         
         // return result.toString();
+        return s;
     }
 }
