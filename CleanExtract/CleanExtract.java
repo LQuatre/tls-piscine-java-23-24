@@ -19,7 +19,7 @@ public class CleanExtract {
         return result;
     }
 
-    public static StringBuilder doubleRemover(String s) {
+    public static StringBuilder silexistplusieurfoisRemover(String s) {
         var result = new StringBuilder();
         var isPoint = false;
 
@@ -69,12 +69,16 @@ public class CleanExtract {
 
             for (var i = 0; i < partCleaned.length(); i++) {
                 var c = partCleaned.charAt(i);
+
+                if (i == 0 && c == ' ') {
+                    continue;
+                }
                 
                 if (c == '.') {
                     if (pointExists) {
                         if (index == parts.length - 1) {
                             partsResult.append(c);
-                            partsResult = doubleRemover(partsResult.toString());
+                            partsResult = silexistplusieurfoisRemover(partsResult.toString());
                         }
                         break;
                     }
@@ -105,7 +109,7 @@ public class CleanExtract {
             result.setLength(result.length() - 1);
         }
 
-        if (result.length() > 0 && result.charAt(0) == ' ') {
+        if ((result.length() > 0 && result.charAt(0) == ' ') || (result.charAt(0) == '.')){
             result.deleteCharAt(0);
         }
 
