@@ -93,7 +93,7 @@ public class CleanExtract {
                     continue;
                 } 
                 
-                if ((Character.isLetter(c) || c == ' ' || c == ',' || c == '\'' || c == '-') && !pointExists) { 
+                if ((Character.isLetter(c) || c == ' ' || c == ',' || c == '\'' || c == '-')) { 
                     partsResult.append(c);
                 }
             }
