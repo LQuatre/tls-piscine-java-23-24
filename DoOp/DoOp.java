@@ -32,7 +32,7 @@ public class DoOp {
                 }
                 return Integer.toString(leftOperand % rightOperand);
             default:
-                return "Error: Invalid operator";
+                return "Error";
         }
     }
 }
