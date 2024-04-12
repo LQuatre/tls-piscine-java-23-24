@@ -4,11 +4,11 @@ public class SortArgs {
     public static void sort(String[] args) {
         int[] numbers = Arrays.stream(args).mapToInt(Integer::parseInt).toArray();
         Arrays.sort(numbers);
-        for (int number : numbers) {
-            if (number != numbers[numbers.length - 1]) {
-                System.out.print(number);
+        for (int i = 0; i < numbers.length; i++) {
+            if (i != numbers.length - 1) {
+            System.out.print(numbers[i] + " ");
             } else {
-                System.out.println(number + " ");
+            System.out.print(numbers[i]);
             }
         }
     }
