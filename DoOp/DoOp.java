@@ -1,7 +1,7 @@
 public class DoOp {
     public static String operate(String[] args) {
         if (args.length != 3) {
-            return "Error: Invalid number of arguments";
+            return "Error";
         }
 
         int leftOperand;
@@ -11,7 +11,7 @@ public class DoOp {
             leftOperand = Integer.parseInt(args[0]);
             rightOperand = Integer.parseInt(args[2]);
         } catch (NumberFormatException e) {
-            return "Error: Invalid operand";
+            return "Error";
         }
 
         switch (args[1]) {
