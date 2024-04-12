@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Cat {
+public class Cat { // C'est d'un first TRY MDR !!
     public static void cat(String[] args) throws IOException {
         if (args.length == 0) {
             return;
