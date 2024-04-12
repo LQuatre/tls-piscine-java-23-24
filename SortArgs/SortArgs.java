@@ -5,7 +5,11 @@ public class SortArgs {
         int[] numbers = Arrays.stream(args).mapToInt(Integer::parseInt).toArray();
         Arrays.sort(numbers);
         for (int number : numbers) {
-            System.out.print(number + " ");
+            if (number != numbers[numbers.length - 1]) {
+                System.out.print(number);
+            } else {
+                System.out.println(number + " ");
+            }
         }
     }
 }
