@@ -7,6 +7,5 @@ public class SortArgs {
         for (int number : numbers) {
             System.out.print(number + " ");
         }
-        System.out.print();
     }
 }
