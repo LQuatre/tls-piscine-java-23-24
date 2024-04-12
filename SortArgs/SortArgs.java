@@ -11,5 +11,8 @@ public class SortArgs {
                 System.out.println(numbers[i]);
             }
         }
+        if (numbers.length == 0) {
+            System.out.println();
+        }
     }
 }
